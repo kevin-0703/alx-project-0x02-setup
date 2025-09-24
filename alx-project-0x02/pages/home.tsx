@@ -2,7 +2,7 @@ import React from "react";
 import Card from "@/components/common/Card";
 import PostModal from "@/components/common/PostModal";
 import { useState } from "react";
-
+import Header from "@/components/layout/Header";
 interface Post {
   title: string;
   content: string;
@@ -17,6 +17,7 @@ const HomePage = () => {
   };
   return (
     <>
+      <Header />
       <h1>Welcome to home page</h1>
       <Card title="card title" content="card content" />
       <button onClick={() => setIsModalOpen(true)}>Add new post</button>
