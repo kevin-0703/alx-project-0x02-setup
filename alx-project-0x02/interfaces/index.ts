@@ -14,3 +14,9 @@ export interface PostProps {
   content: string;
   userId: string;
 }
+
+export interface UserProps {
+  name: string;
+  email: string;
+  address: string;
+}
